@@ -1,0 +1,116 @@
+.wrapper {
+  margin: 30px 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  background: linear-gradient(54deg, #ff960a, #ffc004);
+  box-shadow: 1px 2px 15px 0px rgba(206, 206, 206, 0.39);
+  border-radius: 10px 10px 0 0;
+  .line {
+    height: 1rpx;
+    border-top: solid 1rpx #fff;
+  }
+  .v-line-left {
+    position: absolute;
+    left: -40%;
+    top: 20px;
+    bottom: 20px;
+    width: 2px;
+    border-left: solid 1px #fff;
+  }
+  .v-line-right {
+    position: absolute;
+    right: -40%;
+    top: 20px;
+    bottom: 20px;
+    width: 2px;
+    border-left: solid 1px #fff;
+  }
+  .header {
+    .title {
+      position: relative;
+      margin: 10px 21px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      height: 100%;
+      .h5 {
+        font-size: 29px;
+        color: #fff;
+        padding-left: 20px;
+      }
+      .more {
+        width: 150px;
+        background: #fff;
+        margin-left: auto;
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 50px;
+        color: #ff7b19;
+        text-align: center;
+        .text {
+          font-size: 25px;
+          color: #ff7c1a;
+        }
+      }
+    }
+    .title:before {
+      position: absolute;
+      display: inline-block;
+      content: "";
+      width: 4px;
+      height: 38px;
+      background: linear-gradient(
+        176deg,
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 1)
+      );
+      background-size: contain;
+      vertical-align: sub;
+    }
+  }
+  .content {
+    width: 100%;
+    .lable {
+      margin: 40px 0 20px 0;
+      text-align: center;
+      .text {
+        color: #fff;
+        font-size: 24px;
+      }
+    }
+    .price {
+      margin-bottom: 40px;
+      font-size: 36px;
+      color: #fff;
+      .span {
+        font-size: 24px;
+        color: #fff;
+      }
+    }
+  }
+  .tags {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    .tag {
+      padding: 20px;
+      color: #fff;
+      font-size: 26px;
+      position: relative;
+    }
+  }
+  .footer {
+    text-align: center;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    .desc {
+      padding: 20px;
+      color: #999;
+      font-size: 20px;
+    }
+  }
+}
