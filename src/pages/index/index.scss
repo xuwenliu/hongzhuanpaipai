@@ -1,0 +1,392 @@
+.index {
+  // background: #fff;
+}
+.screen-swiper {
+  min-height: 300rpx;
+  background: #fff;
+}
+
+.notice-item {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20rpx;
+  height: 74rpx;
+  border-bottom: 1rpx solid #efefef;
+  .notice-img {
+    width: 104rpx;
+    height: 25rpx;
+  }
+  .notice {
+    width: 450rpx;
+    height: 74rpx;
+    color: #343434;
+    font-size: 25px;
+    .text {
+      display: inline-block;
+      width: 450rpx;
+      line-height: 74rpx;
+    }
+  }
+  .more {
+    color: #5560f0;
+    font-size: 25px;
+  }
+}
+
+.pai-package {
+  padding-top: 40px;
+  background: #fff;
+  .screen-swiper {
+    min-height: 400rpx;
+    .swiper-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+      box-sizing: border-box;
+      .package-item {
+        padding: 28px 14px;
+        border: solid 4px #f7f7f7;
+        box-shadow: 1px 2px 15px 0px rgba(206, 206, 206, 0.39);
+        border-radius: 11px;
+        box-sizing: border-box;
+        min-width: 220px;
+        .name {
+          color: #333333;
+          font-weight: bold;
+          text-align: left;
+          .text {
+            margin-left: 10px;
+            font-size: 21px;
+            vertical-align: middle;
+          }
+        }
+        .name:before {
+          display: inline-block;
+          content: "";
+          border-radius: 3px;
+          width: 4px;
+          height: 20px;
+          background: linear-gradient(
+            176deg,
+            rgba(255, 123, 25, 1),
+            rgba(255, 169, 106, 1)
+          );
+        }
+        .money {
+          margin: 34px 0;
+          font-size: 42px;
+          color: #ff7b19;
+          text-align: center;
+          .yuan {
+            font-size: 20px;
+          }
+        }
+        .desc {
+          margin-bottom: 10px;
+          font-size: 24px;
+          color: #888;
+        }
+        .btn {
+          text-align: center;
+        }
+        .order-btn {
+          font-size: 24px;
+          margin-top: 31px;
+          width: 147px;
+          height: 40px;
+          color: #fff;
+          padding: 0 !important;
+          background: linear-gradient(
+            176deg,
+            rgba(255, 123, 25, 1),
+            rgba(255, 169, 106, 1)
+          );
+          border-radius: 30px;
+        }
+      }
+    }
+  }
+}
+
+// 拍手团队
+.team {
+  margin-top: 25px;
+  background: rgb(255, 255, 255);
+  font-size: 26px;
+  color: #888;
+  .title {
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-bottom: 1rpx solid #efefef;
+    .title-text {
+      color: #343434;
+      font-size: 30px;
+      font-weight: 400;
+      margin-left: 20px;
+    }
+    .title-more {
+      font-weight: 400;
+      color: #5560f0;
+      font-size: 25px;
+    }
+  }
+  .title:before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 38px;
+    background: url(../../style/images/team-left.png) no-repeat;
+    background-size: contain;
+    vertical-align: sub;
+  }
+
+  .items {
+    .item {
+      padding: 0 27px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: solid 1rpx #efefef;
+      .team-item {
+        font-size: 32px;
+        flex: 1;
+        .range {
+          font-size: 26px;
+          color: #666666;
+          width: 260rpx;
+          text-align: right;
+          .unit {
+            font-size: 19px;
+          }
+        }
+        .detail {
+          color: #ff9352;
+          font-size: 24px;
+          padding: 10px 30px;
+          border-radius: 24px;
+          border: solid 1px #ff9352;
+        }
+      }
+      .name {
+        padding-left: 10px;
+        width: 240rpx;
+        color: #333;
+      }
+    }
+  }
+}
+// 企业下单
+.company {
+  margin-top: 24px;
+  background: rgb(255, 255, 255);
+  padding: 0 20px;
+  font-size: 26px;
+  color: #888;
+  text-align: center;
+  .title {
+    display: flex;
+    padding: 20px 0;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: middle;
+    position: relative;
+    .text {
+      font-size: 29px;
+      color: #333;
+      margin-left: 56px;
+    }
+    .more {
+      margin-left: auto;
+      font-size: 13px;
+      color: #888;
+      text-align: right;
+      .span:after {
+        background: url("../../style/images/company-order.png") no-repeat;
+        background-size: contain;
+        display: inline-block;
+        content: "";
+        width: 58px;
+        height: 58px;
+      }
+    }
+  }
+  .title:before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 38px;
+    height: 44px;
+    background: url("../../style/images/company.png") no-repeat;
+    background-size: contain;
+    vertical-align: sub;
+  }
+}
+// 帮助
+.help {
+  margin-top: 25px;
+  background: rgb(255, 255, 255);
+  font-size: 26px;
+  color: #888;
+  .title {
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-bottom: 1rpx solid #efefef;
+    .title-text {
+      color: #343434;
+      font-size: 30px;
+      font-weight: 400;
+      margin-left: 20px;
+    }
+    .title-more {
+      font-weight: 400;
+      color: #5560f0;
+      font-size: 25px;
+    }
+  }
+  .title:before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 38px;
+    background: url(../../style/images/team-left.png) no-repeat;
+    background-size: contain;
+    vertical-align: sub;
+  }
+
+  .items {
+    padding: 35px 22px 22px 22px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    .item {
+      flex: 1;
+    }
+    .unbuy {
+      display: table-cell;
+      vertical-align: middle;
+      background: #eaf2ff;
+      border-radius: 10px;
+      margin-left: 20px;
+      margin-right: 10px;
+      height: 142px;
+      line-height: 142px;
+      color: #131e6f;
+      .name {
+        vertical-align: middle;
+        display: inline-block;
+        font-size: 29px;
+        margin: 0 36px 0 24px;
+      }
+      .icon{
+        margin-right: 46px;
+      }
+      .icon:after {
+        vertical-align: middle;
+        display: inline-block;
+        content: "";
+        width: 58px;
+        height: 69px;
+        background: url(../../style/images/un_buy.png) no-repeat;
+        background-size: contain;
+      }
+    }
+    .buy {
+      display: table-cell;
+      vertical-align: middle;
+      background: #f9f5fe;
+      border-radius: 10px;
+      margin-left: 20px;
+      margin-right: 10px;
+      height: 142px;
+      line-height: 142px;
+      color: #131e6f;
+      .name {
+        vertical-align: middle;
+        display: inline-block;
+        font-size: 29px;
+        margin: 0 36px 0 24px;
+      }
+      .icon{
+        margin-right: 46px;
+      }
+      .icon:after {
+        vertical-align: middle;
+        display: inline-block;
+        content: "";
+        width: 58px;
+        height: 69px;
+        background: url("../../style/images/buy.png") no-repeat;
+        background-size: contain;
+      }
+    }
+    .win {
+      display: table-cell;
+      vertical-align: middle;
+      background: #fef8ea;
+      border-radius: 10px;
+      margin-left: 20px;
+      margin-right: 10px;
+      height: 142px;
+      line-height: 142px;
+      color: #131e6f;
+      .name {
+        vertical-align: middle;
+        display: inline-block;
+        font-size: 29px;
+        margin: 0 36px 0 24px;
+      }
+      .icon{
+        margin-right: 46px;
+      }
+      .icon:after {
+        vertical-align: middle;
+        display: inline-block;
+        content: "";
+        width: 58px;
+        height: 69px;
+        background: url(../../style/images/win.png) no-repeat;
+        background-size: contain;
+      }
+    }
+    .expired {
+      display: table-cell;
+      vertical-align: middle;
+      background: #fef6fb;
+      border-radius: 10px;
+      margin-left: 20px;
+      margin-right: 10px;
+      height: 142px;
+      line-height: 142px;
+      color: #131e6f;
+      .name {
+        vertical-align: middle;
+        display: inline-block;
+        font-size: 29px;
+        margin: 0 36px 0 24px;
+      }
+      .icon{
+        margin-right: 46px;
+      }
+      .icon:after {
+        vertical-align: middle;
+        display: inline-block;
+        content: "";
+        width: 58px;
+        height: 69px;
+        background: url("../../style/images/expired.png") no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}

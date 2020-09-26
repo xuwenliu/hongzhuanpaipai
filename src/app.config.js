@@ -5,7 +5,7 @@ export default {
     navigationBarBackgroundColor: "#fff",
     navigationBarTitleText: "代拍之家",
     navigationBarTextStyle: "black",
-    navigationStyle: "custom",
+    // navigationStyle: "custom",
   },
   tabBar: {
     list: [
