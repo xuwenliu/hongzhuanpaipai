@@ -48,8 +48,8 @@ const Index = () => {
   };
 
   const moreTeam = () => {
-    Taro.navigateTo({
-      url: "pages/teams/index?",
+    Taro.switchTab({
+      url: "pages/teams/index",
     });
   };
   const companyOrder = () => {
