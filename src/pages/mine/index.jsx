@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import Taro from "@tarojs/taro";
-import { View, Text, Button, Image } from "@tarojs/components";
+import { View, Text, Image } from "@tarojs/components";
 import "./index.scss";
 import pai from "../../style/images/pai.jpg";
 import books from "../../style/images/books.png";
@@ -12,7 +12,7 @@ import feedback from "../../style/images/feedback.png";
 import back from "../../style/images/login/back@2x.png";
 
 function Mine() {
-  const isLogin = true;
+  const isLogin = false;
   // || util.cookies.get('uuid') && util.cookies.get('uuid').length > 0;
   const userName = "xxx";
   // || util.cookies.get('uuid')
@@ -29,50 +29,51 @@ function Mine() {
   };
   const toRegister = () => {
     Taro.navigateTo({
-      url: "pages/register/index",
+      url: "/pages/register/index",
     });
   };
   const toLogin = () => {
     Taro.navigateTo({
-      url: "pages/login/index",
+      url: "/pages/login/index",
     });
   };
   const goOrder = () => {
     Taro.navigateTo({
-      url: "pages/myorder/index",
+      url: "/pages/myorder/index",
     });
   };
   const goBooks = () => {
     Taro.navigateTo({
-      url: "pages/book/index",
+      url: "/pages/book/index",
     });
   };
   const goAddress = () => {
     Taro.navigateTo({
-      url: "pages/address/index",
+      url: "/pages/address/index",
     });
   };
   const goBank = () => {
     Taro.navigateTo({
-      url: "pages/bank/index",
+      url: "/pages/bank/index",
     });
   };
   const goResetPwd = () => {
     Taro.navigateTo({
-      url: "pages/changePwd/index",
+      url: "/pages/changePwd/index",
     });
   };
   const goFeedback = () => {
     Taro.navigateTo({
-      url: "pages/feedback/index",
+      url: "/pages/feedback/index",
     });
   };
 
   return (
     <View className="index">
       <View className="main-content">
-        <View className="back"></View>
+        <View className="back">
 
+        </View>
         <View className="info-form">
           {isLogin && (
             <View className="form">

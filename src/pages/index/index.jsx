@@ -37,29 +37,29 @@ const Index = () => {
 
   const makeOrder = (item) => {
     Taro.navigateTo({
-      url: "pages/order/index?id=" + item.id,
+      url: "/pages/order/index?id=" + item.id,
     });
   };
 
   const teamDetail = (item) => {
     Taro.navigateTo({
-      url: "pages/teamDetail/index?id=" + item.id,
+      url: "/pages/teamDetail/index?id=" + item.id,
     });
   };
 
   const moreTeam = () => {
     Taro.switchTab({
-      url: "pages/teams/index",
+      url: "/pages/teams/index",
     });
   };
   const companyOrder = () => {
     Taro.navigateTo({
-      url: "pages/order/index?id=39",
+      url: "/pages/order/index?id=39",
     });
   };
   const goHelp = (id) => {
     Taro.navigateTo({
-      url: "pages/help/index?id=" + id,
+      url: "/pages/help/index?id=" + id,
     });
   };
 

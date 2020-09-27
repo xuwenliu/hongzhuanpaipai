@@ -1,0 +1,62 @@
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  .img {
+    height: 620px;
+    width: 100%;
+  }
+}
+.form {
+  position: absolute;
+  width: 100%;
+  top: 400px;
+  left: 0;
+  z-index: 1;
+  padding: 20px 0;
+  .cu-list.menu {
+    background: #fff;
+    box-shadow: 1px 2px 15px 0px rgba(206, 206, 206, 0.39);
+
+    .cu-item {
+      padding: 0;
+      margin-left: 64px;
+      border-bottom: 1px solid #efefef;
+      .content {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        .img {
+          width: 23px;
+          height: 34px;
+          vertical-align: middle;
+          margin-right: 40px;
+        }
+        .cu-form-group {
+          padding: 0;
+          .input {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .register-btn {
+    margin-top: 90px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    .btn {
+      width: 569px;
+      height: 83px;
+      color: #fff;
+      text-align: center;
+      line-height: 83px;
+      background: linear-gradient(176deg, #ff7b19, #ffa96a);
+      box-shadow: 0px 7px 13px 0px rgba(255, 123, 25, 0.44);
+      border-radius: 41px;
+      border: 0;
+    }
+  }
+}
