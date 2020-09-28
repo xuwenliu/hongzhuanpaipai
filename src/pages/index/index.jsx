@@ -173,7 +173,7 @@ const Index = () => {
                       )}
                     </View>
                     <View
-                      className="team-item"
+                      className="team-item text-right"
                       onClick={() => teamDetail(item)}
                     >
                       <Text className="detail">查看团队</Text>

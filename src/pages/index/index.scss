@@ -153,9 +153,13 @@
       align-items: center;
       justify-content: space-between;
       border-bottom: solid 1rpx #efefef;
+      .text-right {
+        text-align: right;
+      }
       .team-item {
         font-size: 32px;
         flex: 1;
+
         .range {
           font-size: 26px;
           color: #666666;
@@ -288,7 +292,7 @@
         font-size: 29px;
         margin: 0 36px 0 24px;
       }
-      .icon{
+      .icon {
         margin-right: 46px;
       }
       .icon:after {
@@ -317,7 +321,7 @@
         font-size: 29px;
         margin: 0 36px 0 24px;
       }
-      .icon{
+      .icon {
         margin-right: 46px;
       }
       .icon:after {
@@ -346,7 +350,7 @@
         font-size: 29px;
         margin: 0 36px 0 24px;
       }
-      .icon{
+      .icon {
         margin-right: 46px;
       }
       .icon:after {
@@ -375,7 +379,7 @@
         font-size: 29px;
         margin: 0 36px 0 24px;
       }
-      .icon{
+      .icon {
         margin-right: 46px;
       }
       .icon:after {

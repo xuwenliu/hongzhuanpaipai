@@ -21,8 +21,8 @@
 
     .cu-item {
       padding: 0;
-      margin-left: 64px;
-      border-bottom: 1px solid #efefef;
+      margin: 0 64px;
+      border-bottom: 2px solid #efefef;
       .content {
         display: flex;
         align-items: center;
@@ -31,12 +31,45 @@
           width: 23px;
           height: 34px;
           vertical-align: middle;
-          margin-right: 40px;
+          margin-right: 26px;
+          &.code {
+            width: 24px;
+            height: 27px;
+          }
+          &.pwd {
+            width: 24px;
+            height: 29px;
+          }
         }
         .cu-form-group {
           padding: 0;
           .input {
-            display: block;
+            width: 300px;
+            font-size: 26px;
+            color: #999;
+          }
+          .cu-btn {
+            margin-left: 10px;
+          }
+          .pwd-hidden {
+            width: 100px;
+            height: 100px;
+            background: url("../../style/images/login/pwd-hidden.png") center
+              center no-repeat;
+            background-size: 60px 60px;
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+          .pwd-show {
+            width: 100px;
+            height: 100px;
+            background: url("../../style/images/login/pwd-show.png") center
+              center no-repeat;
+            background-size: 60px 60px;
+            position: absolute;
+            right: 0;
+            top: 0;
           }
         }
       }
