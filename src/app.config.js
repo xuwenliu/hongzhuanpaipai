@@ -4,6 +4,7 @@ export default {
     "pages/teams/index",
     "pages/mine/index",
     "pages/register/index",
+    "pages/policy/index",
   ],
   window: {
     backgroundTextStyle: "light",

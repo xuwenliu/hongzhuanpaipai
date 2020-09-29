@@ -92,4 +92,24 @@
       border: 0;
     }
   }
+  .register-extra {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 64rpx;
+    color: #9a9a9a;
+    font-weight: 400;
+    font-size: 30px;
+  }
+  .policy {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40px;
+    color: #757575;
+    font-size: 28px;
+    .cyan {
+      color: #ff7b19;
+    }
+  }
 }
