@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Taro from "@tarojs/taro";
 
-import { RichText, View, Text } from "@tarojs/components";
+import { View } from "@tarojs/components";
 import "./index.scss";
 import "@tarojs/taro/html.css";
+
 function Policy() {
   const nodes = ` <div>
   <h2>“红砖拍牌”网用户注册服务协议 </h2>
@@ -24,7 +25,7 @@ function Policy() {
   <p>
       <p>本协议中所使用的下列名词，除非另有约定，应按以下定义理解 </p>
       <p>1、“本网站”，是指红砖拍牌网（PC网址：www.hongzhuanpaipai.com;手机网址：m.hongzhuanpaipai.com;及红砖拍牌微信客户端等产品）</p>
-      <p>2、“本协议”，是指本文书和其附件（包括但不限于本网站各项规则，如 <a onClick={go} href="/protocol/employer">《雇主用户使用规则》</a>、<a href="/protocol/shop">《拍手用户使用规则》</a>等）组成的一整套协议。</p>
+      <p>2、“本协议”，是指本文书和其附件（包括但不限于本网站各项规则，如 <a id="protocol_employer" href="/protocol/employer">《雇主用户使用规则》</a>、<a id="protocol_shop" href="/protocol/shop">《拍手用户使用规则》</a>等）组成的一整套协议。</p>
       <p>3、注册用户、用户、您：是指符合本协议的规定条件，并同意遵守本协议及其附件（包括但不限于本网站各项规则），并注册成为本网站用户的人或机构或团体等，包括雇主和拍手等。 </p>
       <p>4、“雇主”，是指在本网站发布需求、任务、招标的用户，且具有投标上海车牌的资格、支付款项的能力。 </p>
       <p>5、“拍手”，是指在本网站参加竞标、代为拍牌的用户，且具有相关拍牌经验、能够履行代为拍牌的能力。 </p>
@@ -93,7 +94,7 @@ function Policy() {
   <p class="bolds">第六条 中标后，所得款项的分配</p>
   <p>1、雇主任务款分配规则 </p>
   <p class="bolds" style="padding-left: 10px">雇主发布（悬赏）任务、需求、招标中，应当在任务完成后的72小时内，给予完成任务事项的拍手任务服务费（款项金额由雇主发布、或雇主与拍手协商确定、或拍手招标等方式确定），中标并完成任务的拍手获得服务费；如交易未达成或完成的，收款方应当按照本协议规定在72小时内履行付款义务。 </p>
-      无论中标与否，拍手均应当承担平台运营费，拍手同意按<a href="/protocol/shop">《拍手用户使用规则》</a>执行。</p>
+      无论中标与否，拍手均应当承担平台运营费，拍手同意按<a id="protocol_shop2" href="/protocol/shop">《拍手用户使用规则》</a>执行。</p>
   <p>2、若雇主怠于履行付款义务超过24小时的，本网站有权主动聘请律师发律师函给雇主进行催款，该律师费用（单次发函计费500元）由拍手承担，并在拍手应得的任务款中扣除。 </p>
   <p>3、关于发票：</p>
       雇主因任务支付的任何款项，均不包括税费部分；雇主支付款项需要开具发票的，应当在任务中注明、或任务协商时向拍手提出并协商一致；任务完成后雇主要求开具发票的，应当对税额款项进行补足，并提供相应开票信息。在雇主补足税额款项后，本网站仅就收取到的相应运营费用承担开具发票的义务，其余开票义务由拍手承担。
@@ -127,6 +128,34 @@ function Policy() {
   </p>
   <p class="bolds">第十三条 红砖拍牌网对本服务协议包括基于本服务协议制定的各项规则拥有最终解释权。</p>
 </div>`;
+
+  useEffect(() => {
+    const el1 = document.getElementById("protocol_employer");
+    const el2 = document.getElementById("protocol_shop");
+    const el3 = document.getElementById("protocol_shop2");
+
+    function protocolEmployer(event) {
+      // do something
+      Taro.navigateTo({
+        url: "/pages/protocol/employer",
+      });
+    }
+    function protocolShop(event) {
+      // do something
+      Taro.navigateTo({
+        url: "/pages/protocol/shop",
+      });
+    }
+    el1.addEventListener("tap", protocolEmployer);
+    el2.addEventListener("tap", protocolShop);
+    el3.addEventListener("tap", protocolShop);
+
+    return () => {
+      el1.removeEventListener("tap", protocolEmployer);
+      el2.removeEventListener("tap", protocolShop);
+      el3.removeEventListener("tap", protocolShop);
+    };
+  }, []);
   return (
     <View className="policy" dangerouslySetInnerHTML={{ __html: nodes }}></View>
   );
